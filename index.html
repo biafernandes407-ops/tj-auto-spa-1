@@ -1,444 +1,192 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>TJ Auto Spa | Estética Automotiva Premium</title>
-
-    <meta name="description" content="Estética automotiva premium em Umuarama. Lavagem técnica, detalhamento, polimento, vitrificação e proteção para veículos.">
-
+    <meta name="theme-color" content="#0b0c0d">
+    <title>TJ Auto Spa | Estética Automotiva Premium em Umuarama</title>
+    <meta name="description" content="Estética automotiva premium em Umuarama. Lavagem técnica, detalhamento, polimento e vitrificação com acabamento impecável.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-
 </head>
-
 <body>
-    <!-- ================= HEADER ================= -->
+    <header class="header" aria-label="Navegação principal">
+        <div class="container header-inner">
+            <a href="#home" class="logo" aria-label="TJ Auto Spa - Início">
+                <img src="img/logo/logo.png.jpeg" alt="TJ Auto Spa">
+            </a>
 
-<header class="header">
+            <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-menu">
+                <span></span><span></span>
+            </button>
 
-    <div class="container">
+            <nav class="menu" id="main-menu">
+                <a href="#sobre">Sobre</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#resultados">Resultados</a>
+                <a href="#contato">Contato</a>
+            </nav>
 
-        <a href="#" class="logo">
-
-            <img src="img/logo/logo.png.jpeg"
-                 alt="TJ Auto Spa">
-
-        </a>
-
-        <div class="menu-toggle">
-
-    <i class="fa-solid fa-bars"></i>
-
-</div>
-
-<nav class="menu">
-
-            <a href="#home">Início</a>
-
-            <a href="#sobre">Sobre</a>
-
-            <a href="#servicos">Serviços</a>
-
-            <a href="#contato">Contato</a>
-
-        </nav>
-
-        <a href="https://wa.me/5544988276530"
-
-           target="_blank"
-
-           class="btn-header">
-
-            Agendar
-
-        </a>
-
-    </div>
-
-</header>
-
-<!-- ================= HERO ================= -->
-
-<section class="hero" id="home">
-
-    <div class="overlay"></div>
-
-    <div class="container">
-
-        <div class="hero-content">
-
-            <span>
-
-                TJ AUTO SPA • UMUARAMA
-
-            </span>
-
-            <h1>
-
-                Excelência em cada detalhe.
-
-            </h1>
-
-            <p>
-
-                Estética automotiva premium para quem exige
-                acabamento impecável.
-
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="#contato"
-
-                   class="btn-gold">
-
-                    Solicitar orçamento
-
-                </a>
-
-                <a href="#servicos"
-
-                   class="btn-border">
-
-                    Conhecer serviços
-
-                </a>
-
-            </div>
-
+            <a href="https://wa.me/5544988276530?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20meu%20ve%C3%ADculo."
+               class="btn-header" target="_blank" rel="noopener noreferrer">
+                Agendar horário <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            </a>
         </div>
+    </header>
 
-    </div>
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-media" aria-hidden="true"></div>
+            <div class="hero-shade" aria-hidden="true"></div>
+            <div class="hero-line" aria-hidden="true"></div>
 
-</section>
+            <div class="container hero-layout">
+                <div class="hero-content">
+                    <div class="eyebrow"><span></span> Estética automotiva em Umuarama</div>
+                    <h1>Seu carro merece presença de <em>showroom.</em></h1>
+                    <p>Precisão técnica, produtos premium e atenção absoluta a cada detalhe — da primeira lavagem à proteção final.</p>
 
-<!-- ================= SOBRE ================= -->
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/5544988276530?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento."
+                           class="button button-primary" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Solicitar orçamento
+                        </a>
+                        <a href="#servicos" class="button button-ghost">Explorar serviços</a>
+                    </div>
 
-<section class="about" id="sobre">
-
-    <div class="container about-grid">
-
-        <div class="about-image">
-
-            <img src="img/sobre/sobre.jpg" alt="TJ Auto Spa">
-
-        </div>
-
-        <div class="about-content">
-
-            <span class="section-title">SOBRE A TJ AUTO SPA</span>
-
-            <h2>Cuidamos do seu veículo como se fosse nosso.</h2>
-
-            <p>
-                Somos especialistas em estética automotiva premium, oferecendo
-                lavagem técnica, detalhamento, polimento, vitrificação e proteção
-                para quem busca acabamento impecável e valorização do veículo.
-            </p>
-
-            <div class="about-items">
-
-                <div class="item">
-                    <i class="fa-solid fa-gem"></i>
-                    <span>Produtos Premium</span>
+                    <div class="hero-proof" aria-label="Diferenciais">
+                        <div><strong>01</strong><span>Acabamento<br>minucioso</span></div>
+                        <div><strong>02</strong><span>Proteção<br>duradoura</span></div>
+                        <div><strong>03</strong><span>Atendimento<br>personalizado</span></div>
+                    </div>
                 </div>
 
-                <div class="item">
-                    <i class="fa-solid fa-shield-halved"></i>
-                    <span>Proteção Duradoura</span>
+                <aside class="hero-note">
+                    <span>Detalhamento premium</span>
+                    <p>Porque excelência não está no excesso. Está no detalhe certo.</p>
+                </aside>
+            </div>
+
+            <a href="#sobre" class="scroll-hint" aria-label="Rolar para conhecer a TJ Auto Spa">
+                <span>Descubra</span><i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+            </a>
+        </section>
+
+        <section class="about section" id="sobre">
+            <div class="container about-grid">
+                <div class="about-visual reveal">
+                    <img src="img/tratamentos/polimento.jpg" alt="Polimento profissional realizado pela TJ Auto Spa" loading="lazy">
+                    <div class="about-seal"><strong>TJ</strong><span>Auto Spa<br>Umuarama</span></div>
                 </div>
 
-                <div class="item">
-                    <i class="fa-solid fa-car"></i>
-                    <span>Acabamento Showroom</span>
+                <div class="about-content reveal">
+                    <span class="section-kicker">Padrão TJ Auto Spa</span>
+                    <h2>Cuidado técnico.<br><em>Resultado visível.</em></h2>
+                    <p class="section-lead">Cada veículo recebe uma avaliação cuidadosa e um processo pensado para recuperar brilho, proteger superfícies e valorizar cada linha do automóvel.</p>
+
+                    <div class="values-grid">
+                        <div class="value"><i class="fa-regular fa-gem" aria-hidden="true"></i><span><strong>Produtos selecionados</strong>Qualidade em cada etapa</span></div>
+                        <div class="value"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i><span><strong>Proteção real</strong>Durabilidade e segurança</span></div>
+                        <div class="value"><i class="fa-solid fa-car-side" aria-hidden="true"></i><span><strong>Olhar especialista</strong>Precisão nos detalhes</span></div>
+                        <div class="value"><i class="fa-regular fa-star" aria-hidden="true"></i><span><strong>Experiência premium</strong>Do contato à entrega</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services section" id="servicos">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <div><span class="section-kicker">Serviços especializados</span><h2>O tratamento certo para <em>cada necessidade.</em></h2></div>
+                    <p>Processos profissionais para limpeza, correção e proteção, com soluções sob medida para o estado do seu veículo.</p>
                 </div>
 
-                <div class="item">
-                    <i class="fa-solid fa-star"></i>
-                    <span>Atendimento Personalizado</span>
+                <div class="services-grid">
+                    <article class="service-card service-card-large reveal">
+                        <img src="img/tratamentos/vitrificaçao.jpg" alt="Aplicação de proteção vitrificada" loading="lazy">
+                        <div class="service-overlay"></div>
+                        <div class="service-content"><span>Proteção avançada</span><h3>Vitrificação</h3><p>Brilho profundo e barreira protetora para preservar a pintura por muito mais tempo.</p><a href="https://wa.me/5544988276530?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20vitrifica%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer">Consultar serviço <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <img src="img/tratamentos/polimento.jpg" alt="Polimento técnico automotivo" loading="lazy">
+                        <div class="service-overlay"></div>
+                        <div class="service-content"><span>Correção estética</span><h3>Polimento técnico</h3><a href="https://wa.me/5544988276530?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20polimento%20t%C3%A9cnico." target="_blank" rel="noopener noreferrer">Consultar <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <img src="img/tratamentos/lavem.jpg" alt="Lavagem técnica premium" loading="lazy">
+                        <div class="service-overlay"></div>
+                        <div class="service-content"><span>Cuidado essencial</span><h3>Lavagem técnica</h3><a href="https://wa.me/5544988276530?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20lavagem%20t%C3%A9cnica." target="_blank" rel="noopener noreferrer">Consultar <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+                    </article>
                 </div>
 
+                <div class="packages reveal">
+                    <span>Pacotes disponíveis</span>
+                    <div class="package-list"><p>TJ Wash</p><p>TJ Premium</p><p>TJ Detail</p><p>TJ Silver</p><p>TJ Platinum</p><p>TJ Diamond</p></div>
+                </div>
             </div>
+        </section>
 
+        <section class="results section" id="resultados">
+            <div class="container">
+                <div class="section-heading compact reveal">
+                    <div><span class="section-kicker">Antes e depois</span><h2>O resultado <em>fala por si.</em></h2></div>
+                    <p>Um processo cuidadoso transforma a percepção e devolve presença ao veículo.</p>
+                </div>
+
+                <div class="result-grid reveal">
+                    <figure><img src="img/antes-depois/antes.jpg" alt="Veículo antes do tratamento" loading="lazy"><figcaption><span>01</span> Antes</figcaption></figure>
+                    <figure><img src="img/antes-depois/depois.jpg" alt="Veículo depois do tratamento" loading="lazy"><figcaption><span>02</span> Depois</figcaption></figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section" id="contato">
+            <div class="container contact-shell">
+                <div class="contact-copy reveal">
+                    <span class="section-kicker">Seu veículo, em boas mãos</span>
+                    <h2>Pronto para devolver o brilho que ele merece?</h2>
+                    <p>Fale diretamente com a TJ Auto Spa, acompanhe nossos trabalhos ou trace sua rota até nós.</p>
+
+                    <div class="contact-links">
+                        <a href="https://wa.me/5544988276530?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20servi%C3%A7o."
+                           target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span><small>Atendimento</small><strong>(44) 98827-6530</strong></span><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.instagram.com/tjautospa.pr/" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i><span><small>Acompanhe no Instagram</small><strong>@tjautospa.pr</strong></span><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.google.com/maps/search/?api=1&query=TJ+Auto+Spa+Umuarama+PR" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-solid fa-location-dot" aria-hidden="true"></i><span><small>Localização</small><strong>Umuarama — Paraná</strong></span><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="map-wrap reveal">
+                    <iframe title="Mapa da TJ Auto Spa em Umuarama" src="https://www.google.com/maps?q=TJ%20Auto%20Spa%20Umuarama%20PR&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+                    <a href="https://www.google.com/maps/search/?api=1&query=TJ+Auto+Spa+Umuarama+PR" target="_blank" rel="noopener noreferrer">Abrir no Google Maps <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <a href="#home" class="footer-brand"><img src="img/logo/logo.png.jpeg" alt="TJ Auto Spa"><span>Estética automotiva premium<br>em Umuarama — PR</span></a>
+            <p>© 2026 TJ Auto Spa. Todos os direitos reservados.</p>
+            <a href="#home" class="back-top">Voltar ao topo <i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
         </div>
+    </footer>
 
-    </div>
+    <a href="https://wa.me/5544988276530?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento."
+       class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Conversar com a TJ Auto Spa pelo WhatsApp">
+        <span>Orçamento rápido</span><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+    </a>
 
-</section>
-<!-- ================= PACOTES ================= -->
-
-<section class="packages" id="servicos">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            <span>NOSSOS PACOTES</span>
-
-            <h2>Escolha o cuidado ideal para o seu veículo</h2>
-
-            <p>
-                Cada pacote foi desenvolvido para oferecer um nível diferente
-                de cuidado e proteção, desde a lavagem técnica até o tratamento
-                mais completo da TJ Auto Spa.
-            </p>
-
-        </div>
-
-        <div class="packages-grid">
-
-            <div class="package-card">
-                <h3>TJ Wash</h3>
-                <p>Lavagem técnica premium.</p>
-                <a href="#contato">Saiba mais</a>
-            </div>
-
-            <div class="package-card">
-                <h3>TJ Premium</h3>
-                <p>Limpeza completa com acabamento superior.</p>
-                <a href="#contato">Saiba mais</a>
-            </div>
-
-            <div class="package-card">
-                <h3>TJ Detail</h3>
-                <p>Detalhamento interno e externo.</p>
-                <a href="#contato">Saiba mais</a>
-            </div>
-
-            <div class="package-card destaque">
-                <span>MAIS VENDIDO</span>
-                <h3>TJ Silver</h3>
-                <p>Proteção e valorização da pintura.</p>
-                <a href="#contato">Saiba mais</a>
-            </div>
-
-            <div class="package-card">
-                <h3>TJ Platinum</h3>
-                <p>Correção e acabamento premium.</p>
-                <a href="#contato">Saiba mais</a>
-            </div>
-
-            <div class="package-card">
-                <h3>TJ Diamond</h3>
-                <p>O tratamento mais completo da TJ Auto Spa.</p>
-                <a href="#contato">Saiba mais</a>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-<!--================== ANTES E DEPOIS ==================-->
-
-<section class="before-after">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            <span>RESULTADOS</span>
-
-            <h2>O resultado fala por si.</h2>
-
-            <p>
-                Cada veículo recebe atenção aos mínimos detalhes para entregar
-                acabamento premium e proteção duradoura.
-            </p>
-
-        </div>
-
-        <div class="before-after-grid">
-
-            <div class="before-card">
-
-                <img src="img/antes-depois/antes.jpg" alt="Antes">
-
-                <h3>Antes</h3>
-
-            </div>
-
-            <div class="before-card">
-
-                <img src="img/antes-depois/depois.jpg" alt="Depois">
-
-                <h3>Depois</h3>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!--================== AVALIAÇÕES ==================-->
-
-<section class="reviews">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            <span>CLIENTES</span>
-
-            <h2>Quem conhece, recomenda.</h2>
-
-            <p>
-                Nosso compromisso é entregar um acabamento que supera as expectativas.
-            </p>
-
-        </div>
-
-        <div class="reviews-grid">
-
-            <div class="review-card">
-
-                <div class="stars">★★★★★</div>
-
-                <p>
-                    Atendimento impecável e resultado acima do esperado.
-                    Meu carro ficou melhor que quando saiu da concessionária.
-                </p>
-
-                <h3>Rodrigo Rocha</h3>
-
-            </div>
-
-            <div class="review-card">
-
-                <div class="stars">★★★★★</div>
-
-                <p>
-                    Excelente atendimento. Muito capricho em todos os detalhes.
-                </p>
-
-                <h3>Lucas Martins</h3>
-
-            </div>
-
-            <div class="review-card">
-
-                <div class="stars">★★★★★</div>
-
-                <p>
-                    Melhor estética automotiva da região. Recomendo sem pensar duas vezes.
-                </p>
-
-                <h3>Carlos Henrique</h3>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-<!--================== CONTATO ==================-->
-
-<section class="contact" id="contato">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            <span>CONTATO</span>
-
-            <h2>Vamos cuidar do seu veículo?</h2>
-
-            <p>
-                Entre em contato agora mesmo e solicite um orçamento.
-            </p>
-
-        </div>
-
-        <div class="contact-grid">
-
-            <div class="contact-card">
-
-                <i class="fa-brands fa-whatsapp"></i>
-
-                <h3>WhatsApp</h3>
-
-                <p>(44) 98827-6530</p>
-
-            </div>
-
-            <div class="contact-card">
-
-                <i class="fa-brands fa-instagram"></i>
-
-                <h3>Instagram</h3>
-
-                <p>@tjautospa.pr</p>
-
-            </div>
-
-            <div class="contact-card">
-
-                <i class="fa-solid fa-location-dot"></i>
-
-                <h3>Localização</h3>
-
-                <p>Umuarama - Paraná</p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-<footer class="footer">
-
-    <div class="container">
-
-        <img src="img/logo/logo.png.jpeg" class="footer-logo">
-
-        <p>© 2026 TJ Auto Spa • Todos os direitos reservados.</p>
-
-    </div>
-
-</footer>
-<!--================ WHATSAPP PREMIUM ================-->
-
-<a href="https://wa.me/5544988276530"
-
-target="_blank"
-
-class="whatsapp">
-
-    <div class="whatsapp-text">
-
-        <strong>Fale Conosco</strong>
-
-        <span>Resposta rápida</span>
-
-    </div>
-
-    <div class="whatsapp-icon">
-
-        <i class="fa-brands fa-whatsapp"></i>
-
-    </div>
-
-</a>
-
-<script src="js/script.js"></script>
-
+    <script src="js/script.js"></script>
 </body>
-
 </html>
