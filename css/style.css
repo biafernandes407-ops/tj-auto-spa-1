@@ -38,7 +38,7 @@ button { color: inherit; font: inherit; }
 .menu-toggle { display: none; border: 0; background: none; cursor: pointer; }
 
 .hero { min-height: 820px; height: 100svh; position: relative; display: flex; align-items: center; isolation: isolate; overflow: hidden; }
-.hero-media { position: absolute; inset: 0; z-index: -3; background: url("../img/hero/porsche.jpg") center 58% / cover no-repeat; transform: scale(1.04); animation: heroZoom 1.8s var(--ease) forwards; }
+.hero-media { position: absolute; inset: 0; z-index: -3; background: url("../img/hero/porsche.jpg") center 58% / cover no-repeat; filter: grayscale(1) contrast(1.08) brightness(.82); transform: scale(1.04); animation: heroZoom 1.8s var(--ease) forwards; }
 .hero-shade { position: absolute; inset: 0; z-index: -2; background: linear-gradient(90deg, rgba(8,9,10,.96) 0%, rgba(8,9,10,.78) 43%, rgba(8,9,10,.16) 78%), linear-gradient(0deg, rgba(8,9,10,.86) 0%, transparent 40%, rgba(8,9,10,.3) 100%); }
 .hero-line { position: absolute; width: 1px; height: 58%; top: 24%; left: max(24px, calc((100vw - 1180px) / 2 - 42px)); background: linear-gradient(transparent, rgba(200,169,107,.8), transparent); }
 .hero-layout { display: grid; grid-template-columns: minmax(0, 720px) 1fr; gap: 80px; align-items: end; padding-top: 90px; }
