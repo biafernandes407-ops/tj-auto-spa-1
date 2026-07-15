@@ -1,79 +1,41 @@
-// HEADER
-
 const header = document.querySelector(".header");
+const menu = document.querySelector(".menu");
+const menuToggle = document.querySelector(".menu-toggle");
 
-window.addEventListener("scroll", () => {
+const updateHeader = () => header.classList.toggle("active", window.scrollY > 40);
 
-    if (window.scrollY > 80) {
+window.addEventListener("scroll", updateHeader, { passive: true });
+updateHeader();
 
-        header.classList.add("active");
+const closeMenu = () => {
+    menu.classList.remove("active");
+    menuToggle.classList.remove("active");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.setAttribute("aria-label", "Abrir menu");
+    document.body.classList.remove("menu-open");
+};
 
-    } else {
-
-        header.classList.remove("active");
-
-    }
-
+menuToggle.addEventListener("click", () => {
+    const isOpen = menu.classList.toggle("active");
+    menuToggle.classList.toggle("active", isOpen);
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    menuToggle.setAttribute("aria-label", isOpen ? "Fechar menu" : "Abrir menu");
+    document.body.classList.toggle("menu-open", isOpen);
 });
 
-// ANIMAÇÃO
-
-const elementos = document.querySelectorAll(
-
-".about,.packages,.before-after,.reviews,.contact"
-
-);
-
-const aparecer = new IntersectionObserver((entries)=>{
-
-entries.forEach(entry=>{
-
-if(entry.isIntersecting){
-
-entry.target.classList.add("show");
-
-}
-
+document.querySelectorAll('.menu a, a[href^="#"]').forEach((link) => {
+    link.addEventListener("click", closeMenu);
 });
 
-});
+const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target);
+    });
+}, { threshold: 0.14 });
 
-elementos.forEach(el=>{
-
-el.classList.add("hidden");
-
-aparecer.observe(el);
-
-});
-// MENU MOBILE
-
-const toggle=document.querySelector(".menu-toggle");
-
-const menu=document.querySelector(".menu");
-
-toggle.addEventListener("click",()=>{
-
-menu.classList.toggle("active");
-
-});
-document.querySelectorAll('a[href^="#"]').forEach(link=>{
-
-link.addEventListener("click",function(e){
-
-e.preventDefault();
-
-const destino=document.querySelector(this.getAttribute("href"));
-
-if(destino){
-
-destino.scrollIntoView({
-
-behavior:"smooth"
-
-});
-
-}
-
-});
-
+document.querySelectorAll(".reveal").forEach((element, index) => {
+    element.style.transitionDelay = `${Math.min(index % 3, 2) * 80}ms`;
+    revealObserver.observe(element);
 });
